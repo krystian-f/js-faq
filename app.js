@@ -10,7 +10,7 @@ const faqDB = [
   { 
     id: 2,
     question: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non possimus perspiciatis quidem iste eveniet odit unde reiciendis numquam. Debitis distinctio sed molestiae nam, ipsam asperiores."
+    answer: "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non possimus perspiciatis quidem iste eveniet odit unde reiciendis numquam. Debitis distinctio sed molestiae nam, ipsam asperiores."
   },
   { 
     id: 3,
@@ -47,7 +47,6 @@ const changeItem = function(btn) {
 
 const changeButton = function(btn) {
   let question = btn.parentElement;
-  // btn.classList.toggle('faq__question-button-active');
   if(question.classList.contains('faq__question-active')) {
     btn.innerHTML = `indeterminate_check_box`;
   } else if (!question.classList.contains('faq__question-active')){
