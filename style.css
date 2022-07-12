@@ -96,7 +96,13 @@ h1{
   border-bottom: 1px solid var(--faq-border-clr);
 }
 
+.faq__question-button-active{
+  color: var(--faq-buton-active-clr);
+}
+
 .faq__answer-active{
   display:flex;
 }
+
+
 
