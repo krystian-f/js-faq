@@ -24,7 +24,7 @@ const faqBox = document.querySelector('.js-faq-wrapper');
 
 // Functions
 const loadFaqData = function() {
-  faqDB.forEach((item)=> {
+  faqDB.reverse().forEach((item)=> {
     let itemData = 
     `
       <div class="faq__item">
