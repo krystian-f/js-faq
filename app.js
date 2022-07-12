@@ -46,10 +46,11 @@ const changeItem = function(btn) {
 };
 
 const changeButton = function(btn) {
-  btn.classList.toggle('faq__question-button-active');
-  if(btn.classList.contains('faq__question-button-active')) {
+  let question = btn.parentElement;
+  // btn.classList.toggle('faq__question-button-active');
+  if(question.classList.contains('faq__question-active')) {
     btn.innerHTML = `indeterminate_check_box`;
-  } else if (!btn.classList.contains('faq__question-button-active')){
+  } else if (!question.classList.contains('faq__question-active')){
     btn.innerHTML = `add_box`;
   }
 };
