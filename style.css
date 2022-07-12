@@ -5,6 +5,7 @@
 --faq-border-clr: hsla(0, 0%, 0%, .4);
 --faq-buton-inactive-clr: hsla(0, 0%, 0%, .6);
 --faq-buton-active-clr: hsla(0, 0%, 0%, 1);
+--answer-text-clr: hsla(0, 0%, 0%, .8);
 }
 
 html{
@@ -57,13 +58,12 @@ h1{
   height: 100%;
   display: flex;
   flex-direction: column;
-  /* gap: 2rem; */
 }
 
 .faq__question{
   width:100%;
   height:100%;
-  min-height:4rem;
+  min-height: 4rem;
   display:flex;
   flex-direction: row;
   align-items: center;
@@ -88,6 +88,7 @@ h1{
 
 .faq__answer{
   font-size: 1.6rem;
+  color: var(--answer-text-clr);
   overflow: hidden;
   height: 0;
   transition: all .2s ease-out;
